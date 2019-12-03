@@ -129,5 +129,4 @@ def mobilenet_v3(inputs,classes_num,multiplier=1.0, is_training=True,type='small
 if __name__ == "__main__":
     input_test = tf.ones([1, 224, 224, 3])
     num_classes = 1000
-    #model, end_points = mobilenet_v3_large(input_test, num_classes, multiplier=1.0, is_training=True, reuse=None)
     model, end_points = mobilenet_v3(input_test, num_classes, multiplier=1.0, is_training=True,type='large')
